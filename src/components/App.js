@@ -3,6 +3,9 @@ import {BrowserRouter as Router,Switch,Route,Redirect} from "react-router-dom"
 import localVariables from "../config/localVariables";
 import Home from './pages/home';
 import LayoutView from './Layout/LayoutView';
+import About from './pages/About';
+import Joining from './pages/Joining';
+
 
 
 const PrivateRoute = ({ component, ...rest }) => {
@@ -50,6 +53,8 @@ const PrivateRoute = ({ component, ...rest }) => {
                      <Route exact path="/app" render={() => <Redirect to="/dashboard" />} />
                      <PrivateRoute path="/app" component={LayoutView} />
                      <PublicRoute exact path="/home" component={Home}/>
+                     <PublicRoute exact path="/about" component={About}/>
+                     <PublicRoute exact path="/joining" component={Joining}/>
                  </Switch>
              </Router>
           )};

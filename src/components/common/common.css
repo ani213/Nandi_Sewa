@@ -1,0 +1,90 @@
+@media screen and (min-width:851px) {
+    html{
+        font-size: 62.5%;
+    }
+.link-container{
+display: flex;
+justify-content: space-around !important;
+width: 100%;
+padding: 2rem;
+}
+.link{
+    color: antiquewhite;
+    font-size: 1.7rem !important;
+}
+.drop-down-container>a{
+    font-size: 1.7rem !important;
+    color: antiquewhite !important;
+}
+.drop-down-item{
+    font-size: 1.6rem;
+}
+.link:hover{
+    color: white;
+}
+.drop-down-container>a:hover{
+    color: white !important;
+}
+
+}
+
+
+
+
+/* ****************************************Tablet View ***************************************/
+@media screen and (min-width:451px) and (max-width:850px) {
+    html{
+        font-size: 55%;
+    }
+    .link-container{
+        display: flex;
+        justify-content: space-around !important;
+        width: 100%;
+        padding: 2rem;
+        }
+        .link{
+            color: antiquewhite;
+            font-size: 1.7rem !important;
+        }
+        .drop-down-container>a{
+            font-size: 1.7rem !important;
+            color: antiquewhite !important;
+        }
+        .drop-down-item{
+            font-size: 1.6rem;
+        }
+        .link:hover{
+            color: white;
+        }
+        .drop-down-container>a:hover{
+            color: white !important;
+        }
+
+}
+
+
+
+
+@media screen and (max-width:450px) {
+    html{
+        font-size: 45%;
+    }
+    .link{
+        color: antiquewhite;
+        font-size: 1.7rem !important;
+    }
+    .drop-down-container>a{
+        font-size: 1.7rem !important;
+        color: antiquewhite !important;
+    }
+    .drop-down-item{
+        font-size: 1.6rem;
+    }
+    .link:hover{
+        color: white;
+    }
+    .drop-down-container>a:hover{
+        color: white !important;
+    }
+    
+}  

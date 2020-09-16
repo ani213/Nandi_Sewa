@@ -1,0 +1,64 @@
+:root {
+    --primary-color:#0D3D56;
+  }
+
+@media screen and (min-width:851px) {
+    html{
+        font-size: 62.5%;
+    }
+.joining-main-container{
+    padding: 2rem;
+}
+.joining-content-heading{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.joining-content-parra{
+    font-size: 1.7rem;
+    color: var(--primary-color);
+}
+}
+
+
+
+
+/* ****************************************Tablet View ***************************************/
+@media screen and (min-width:451px) and (max-width:850px) {
+    html{
+        font-size: 55%;
+    }
+    .joining-main-container{
+        padding: 2rem;
+    }
+    .joining-content-heading{
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--primary-color);
+    }
+    .joining-content-parra{
+        font-size: 1.7rem;
+        color: var(--primary-color);
+    }
+}
+
+
+
+
+@media screen and (max-width:450px) {
+    html{
+        font-size: 45%;
+    }
+    .joining-main-container{
+        padding: 2rem;
+    }
+    .joining-content-heading{
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--primary-color);
+    }
+    .joining-content-parra{
+        font-size: 1.7rem;
+        color: var(--primary-color);
+    }
+}  
