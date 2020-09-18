@@ -4,14 +4,8 @@ import {Navbar,Nav,NavDropdown} from 'react-bootstrap'
 
 
 class Menubar extends Component {
-    state = { 
-        selectedLink:null
-     }
-handleClick=(title)=>{
-    this.setState({
-        selectedLink:title
-    })
-}
+    state = { }
+
     render() { 
         console.log(this.props.location.pathname)
         return ( 
@@ -32,7 +26,7 @@ handleClick=(title)=>{
                                         })
                                     }
                                 </NavDropdown>
-                               </div>:<Link className={`link ${(ele.to===this.props.location.pathname)?"selected-link":""}`} to={ele.to} key={index} onClick={()=>this.handleClick(ele.title)}>{ele.title}</Link>}
+                               </div>:<Link className={`link ${(ele.to===this.props.location.pathname)?"selected-link":""}`} to={ele.to} key={index} >{ele.title}</Link>}
                         </div>
                     )
                 })}

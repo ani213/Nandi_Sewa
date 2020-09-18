@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from "react-router-dom";
 class Header extends Component {
     state = {  }
     render() { 
@@ -9,7 +10,7 @@ class Header extends Component {
                     <div className="hindi-text">परोSपि हितवान् बन्धु</div>
                     </div>
                 <div className="button-container">
-                    <div><button className="btn btn-light button-donate">Donate Now</button> </div>
+                    <div><button className="btn btn-light button-donate"><Link className="donate-link" to="/donate">Donate Now</Link></button> </div>
                     <div className="volunteer-button-container"><button className="btn btn-danger button-volunteer">Become a volunteer</button></div>
                 </div>
             </div>

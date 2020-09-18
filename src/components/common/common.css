@@ -21,6 +21,13 @@
 .hindi-text{
     font-size: 1.5rem;
 }
+.donate-link{
+    color: var(--font-color)
+}
+.donate-link:hover{
+    text-decoration: none;
+}
+
 .button-container{
     display: flex;
 }

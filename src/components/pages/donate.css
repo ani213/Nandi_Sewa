@@ -1,0 +1,123 @@
+:root {
+    --primary-color:#0D3D56;
+  }
+
+@media screen and (min-width:851px) {
+    html{
+        font-size: 62.5%;
+    }
+.form-main-container{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.form-container{
+    width: 50%;
+    background:  #ff6464;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+.donate-fontsize{
+    font-size: 2rem;
+    color: white
+}
+.input-container{
+    padding-bottom: 2rem;
+}
+.input{
+    font-size: 1.7rem !important;
+}
+.pay-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pay-button{
+    padding: 0.7rem 5rem !important;
+    font-size: 1.5rem !important;
+}
+
+}
+
+
+
+
+/* ****************************************Tablet View ***************************************/
+@media screen and (min-width:451px) and (max-width:850px) {
+    html{
+        font-size: 55%;
+    }
+
+    .form-main-container{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    .form-container{
+        width: 50%;
+        background:  #ff6464;
+        padding: 3rem;
+        border-radius: 1rem;
+    }
+    .donate-fontsize{
+        font-size: 2rem;
+        color: white
+    }
+    .input-container{
+        padding-bottom: 2rem;
+    }
+    .input{
+        font-size: 1.7rem !important;
+    }
+    .pay-button-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pay-button{
+        padding: 0.7rem 5rem !important;
+        font-size: 1.5rem !important;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width:450px) {
+    html{
+        font-size: 45%;
+    }
+    .form-main-container{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    .form-container{
+        width: 50%;
+        background:  #ff6464;
+        padding: 3rem;
+        border-radius: 1rem;
+    }
+    .donate-fontsize{
+        font-size: 2rem;
+        color: white
+    }
+    .input-container{
+        padding-bottom: 2rem;
+    }
+    .input{
+        font-size: 1.7rem !important;
+    }
+    .pay-button-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pay-button{
+        padding: 0.7rem 5rem !important;
+        font-size: 1.5rem !important;
+    }
+    
+
+}  

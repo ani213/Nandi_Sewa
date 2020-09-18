@@ -5,6 +5,7 @@ import Home from './pages/home';
 import LayoutView from './Layout/LayoutView';
 import About from './pages/About';
 import Joining from './pages/Joining';
+import Donate from './pages/donate';
 
 
 
@@ -55,6 +56,7 @@ const PrivateRoute = ({ component, ...rest }) => {
                      <PublicRoute exact path="/home" component={Home}/>
                      <PublicRoute exact path="/about" component={About}/>
                      <PublicRoute exact path="/joining" component={Joining}/>
+                     <PublicRoute exact path="/donate" component={Donate}/>
                  </Switch>
              </Router>
           )};
