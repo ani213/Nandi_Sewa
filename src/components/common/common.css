@@ -27,6 +27,13 @@
 .donate-link:hover{
     text-decoration: none;
 }
+.volunteers-link{
+    color: white;
+}
+.volunteers-link:hover{
+    text-decoration: none;
+    color: white;
+}
 
 .button-container{
     display: flex;

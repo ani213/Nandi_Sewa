@@ -1,11 +1,12 @@
 import React from 'react';
 import {BrowserRouter as Router,Switch,Route,Redirect} from "react-router-dom"
 import localVariables from "../config/localVariables";
-import Home from './pages/home';
+import Home from './pages/Home';
 import LayoutView from './Layout/LayoutView';
 import About from './pages/About';
 import Joining from './pages/Joining';
-import Donate from './pages/donate';
+import Donate from './pages/Donate';
+import Volunteer from './pages/Volunteer';
 
 
 
@@ -57,6 +58,7 @@ const PrivateRoute = ({ component, ...rest }) => {
                      <PublicRoute exact path="/about" component={About}/>
                      <PublicRoute exact path="/joining" component={Joining}/>
                      <PublicRoute exact path="/donate" component={Donate}/>
+                     <PublicRoute exact path="/volunteers" component={Donate}/>
                  </Switch>
              </Router>
           )};
