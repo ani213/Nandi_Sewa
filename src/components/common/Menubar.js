@@ -1,18 +1,27 @@
 import React, { Component } from 'react';
-import {Link} from "react-router-dom"
+import {Link,withRouter} from "react-router-dom"
 import {Navbar,Nav,NavDropdown} from 'react-bootstrap'
 
+
 class Menubar extends Component {
-    state = {  }
+    state = { 
+        selectedLink:null
+     }
+handleClick=(title)=>{
+    this.setState({
+        selectedLink:title
+    })
+}
     render() { 
+        console.log(this.props.location.pathname)
         return ( 
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky='top' bsPrefix="navbar">
+            <Navbar collapseOnSelect expand="lg" bg="dark" className="nav-bar" sticky='top' bsPrefix="navbar">
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="mr-auto link-container">
                 {this.props.navs && this.props.navs.map((ele,index)=>{
                     return (
-                        <div>
+                        <div className={`link-parent ${(ele.to===this.props.location.pathname)?"mobile-selected":""}`}>
                                {(ele.dropdown)?<div>
                                 <NavDropdown title={ele.dropdown.title} className="drop-down-container" id="collasible-nav-dropdown">
                                     {
@@ -23,7 +32,7 @@ class Menubar extends Component {
                                         })
                                     }
                                 </NavDropdown>
-                               </div>:<Link className="link" to={ele.to} key={index} >{ele.title}</Link>}
+                               </div>:<Link className={`link ${(ele.to===this.props.location.pathname)?"selected-link":""}`} to={ele.to} key={index} onClick={()=>this.handleClick(ele.title)}>{ele.title}</Link>}
                         </div>
                     )
                 })}
@@ -34,4 +43,4 @@ class Menubar extends Component {
     }
 }
  
-export default Menubar;
+export default withRouter(Menubar)

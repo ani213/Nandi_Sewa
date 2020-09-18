@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import Menubar from '../common/Menubar';
 import "./home.css"
 import navs from "./config.json"
+import Header from '../common/Header';
 
 class Home extends Component {
     state = {  }
     render() { 
         return ( 
             <div>
+                <Header />
                 <Menubar navs={navs}/>
                 <div className="main-container">
                     <h2 className="content-heading">Vision and Mission of NSS:</h2>
