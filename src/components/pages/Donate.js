@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Header from '../common/Header';
 import Menubar from '../common/Menubar';
 import "./donate.css"
-import navs from "./config.json";
+import navData from "./config.json"
 
 
 class Donate extends Component {
@@ -11,7 +11,7 @@ class Donate extends Component {
         return ( 
             <div>
                 <Header />
-                <Menubar navs={navs}/>
+                <Menubar navs={navData.navs}/>
                 <div className="form-main-container">
                     <div className="form-container">
                         <h1 className="text-center">Make a Donation Now !</h1>

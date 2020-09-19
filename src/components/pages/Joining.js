@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Menubar from '../common/Menubar';
-import navs from "./config.json";
+import navData from "./config.json"
 import "./joining.css"
 import Header from '../common/Header';
 
@@ -10,7 +10,7 @@ class Joining extends Component {
         return ( 
             <div>
                 <Header />
-                <Menubar navs={navs}/>
+                <Menubar navs={navData.navs}/>
                 <div className="joining-main-container">
                     <p className="joining-content-parra">NSS Ambassadors</p>
                     <p className="joining-content-parra">Corporate members</p>

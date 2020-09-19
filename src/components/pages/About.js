@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./about.css"
-import navs from "./config.json"
+import navData from "./config.json"
 import Menubar from '../common/Menubar';
 import Header from '../common/Header';
 class About extends Component {
@@ -9,7 +9,7 @@ class About extends Component {
         return ( 
             <div>
                 <Header />
-                <Menubar navs={navs}/>
+                <Menubar navs={navData.navs}/>
                 <div className="about-main-container">
                     <p className="about-content-parra">Founded in 2019 under the society registration act 21, 1860 ( Reg No. ALL/02344/2019-2020) with 
                         the initiative of Shri Nand Gopal Gupta Nandi and Smt. 

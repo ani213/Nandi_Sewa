@@ -1,4 +1,4 @@
-[{"to":"/home","title":"Home"},{"to":"/about","title":"About NSS"},
+{"navs":[{"to":"/home","title":"Home"},{"to":"/about","title":"About NSS"},
     {"dropdown":{"title":"Initiatives","child":[{"to":"/home","title":"Nandi Samarth"},
     {"to":"/home","title":"Protsahan"},
     {"to":"/home","title":"Shagun"},
@@ -8,4 +8,15 @@
     {"to":"/home","title":"Annakshetra(Mass Kitchen)"}
     ]}}
     ,{"to":"/joining","title":"Joining Us"}
+],
+"volunteers":[{"name":"Aniket Kumar Verma","profile":"Treasurer & Ex.Director of Ven"},
+    {"name":"Umesh Prajapati","profile":"Gen.Manager & Public Servant"},
+    {"name":"Aniket Kumar Verma","profile":"Treasurer & Ex.Director of Ven"},
+    {"name":"Aniket Kumar Verma","profile":"Treasurer & Ex.Director of Ven"},
+    {"name":"Aniket Kumar Verma","profile":"Treasurer & Ex.Director of Ven"},
+    {"name":"Aniket Kumar Verma","profile":"Treasurer & Ex.Director of Ven"},
+    {"name":"Aniket Kumar Verma","profile":"Treasurer & Ex.Director of Ven"},
+    {"name":"Aniket Kumar Verma","profile":"Treasurer & Ex.Director of Ven"}
 ]
+
+}
