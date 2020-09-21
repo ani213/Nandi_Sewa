@@ -7,6 +7,7 @@ import About from './pages/About';
 import Joining from './pages/Joining';
 import Donate from './pages/Donate';
 import Volunteer from './pages/Volunteer';
+import Aayogya from './pages/Aayogya';
 
 
 
@@ -19,7 +20,7 @@ const PrivateRoute = ({ component, ...rest }) => {
         ) : (
           <Redirect
             to={{
-              pathname: '/login',
+              pathname: '/home',
               state: { from: props.location },
             }}
           />
@@ -36,7 +37,7 @@ const PrivateRoute = ({ component, ...rest }) => {
         localStorage.getItem(localVariables.ACCESS_TOKEN) ? (
           <Redirect
             to={{
-              pathname: '/app',
+              pathname: '/',
             }}
           />
         ) : (
@@ -51,14 +52,16 @@ const PrivateRoute = ({ component, ...rest }) => {
     return( 
              <Router >
                  <Switch>
-                     <Route exact path="/" render={() => <Redirect to="/home" />} />
-                     <Route exact path="/app" render={() => <Redirect to="/dashboard" />} />
+                     <Route exact path="/" render={() => <Redirect to="/app/dashboard" />} />
+                     <Route exact path="/app" render={() => <Redirect to="/app/dashboard" />} />
                      <PrivateRoute path="/app" component={LayoutView} />
                      <PublicRoute exact path="/home" component={Home}/>
                      <PublicRoute exact path="/about" component={About}/>
                      <PublicRoute exact path="/joining" component={Joining}/>
                      <PublicRoute exact path="/donate" component={Donate}/>
                      <PublicRoute exact path="/volunteers" component={Volunteer}/>
+                     <PublicRoute exact path="/aayogya" component={Aayogya}/>
+
                  </Switch>
              </Router>
           )};

@@ -4,7 +4,7 @@ import AppView from "./App";
 export default compose(
     connect(
         state=>({
-           
+            isAuthenticated:state.login.isAuthenticated,
         })
     )
 )(AppView)

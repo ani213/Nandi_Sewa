@@ -4,16 +4,21 @@ import "./home.css"
 import navData from "./config.json"
 import Header from '../common/Header';
 import Slider from '../common/Slider';
+import slide1 from "../common/images/Slide2.jpeg";
+import slide2 from "../common/images/Slide3.jpeg";
+import slide3 from "../common/images/Slide4.jpeg";
+
 
 class Home extends Component {
     state = {  }
     render() { 
+        let slides=[{photo:slide1},{photo:slide2},{photo:slide3}]
         return ( 
             <div>
                 <Header />
                 <Menubar navs={navData.navs}/>
                 <div className="home-slide-container">
-                    <Slider />
+                    <Slider slides={slides}/>
                 </div>
                 <div className="main-container">
                     <h2 className="content-heading">Vision and Mission of NSS:</h2>

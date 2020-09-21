@@ -1,16 +1,28 @@
 import React, { Component } from 'react'
 import { Carousel } from 'react-bootstrap';
-import slide2 from "./images/Slide2.jpeg"
-import slide3 from "./images/Slide3.jpeg"
-import slide4 from "./images/Slide4.jpeg"
-
 
 class Slider extends Component {
     state = {  }
     render() { 
         return ( 
             <Carousel>
-            <Carousel.Item>
+
+              {
+                this.props.slides && this.props.slides.map((ele,index)=>{
+                 return (<Carousel.Item>
+                  <img
+                    className="slide-image"
+                    src={ele.photo}
+                    alt="Third slide"
+                  />
+              
+                  <Carousel.Caption>
+                     {ele.html && ele.html}
+                  </Carousel.Caption>
+                </Carousel.Item>)
+                })
+              }
+            {/* <Carousel.Item>
               <img
                 className="slide-image"
                 src={slide2}
@@ -18,7 +30,8 @@ class Slider extends Component {
               />
           
               <Carousel.Caption>
-               
+                  <h3>Second slide label</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -42,7 +55,7 @@ class Slider extends Component {
               <Carousel.Caption>
                 
               </Carousel.Caption>
-            </Carousel.Item>
+            </Carousel.Item> */}
           </Carousel>
          );
     }

@@ -1,6 +1,5 @@
 import {combineReducers} from 'redux';
-// import login from "../pages/login/loginState"
-// import layout from "../components/Layout/LayoutState"
+import login from "../components/pages/loginState"
 export default combineReducers({
-    
+    login
   });
