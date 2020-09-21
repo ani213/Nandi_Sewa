@@ -20,8 +20,9 @@ class Menubar extends Component {
                                 <NavDropdown title={ele.dropdown.title} className="drop-down-container" id="collasible-nav-dropdown">
                                     {
                                         ele.dropdown.child && ele.dropdown.child.map((childs,index)=>{
+                                            console.log(childs)
                                             return(
-                                                <NavDropdown.Item href={childs.to} className="drop-down-item">{childs.title}</NavDropdown.Item>
+                                                <NavDropdown.Item href={childs.to} className={`drop-down-item ${(childs.to===this.props.location.pathname)?"selected-dropdown-link":""}`} key={index}>{childs.title}</NavDropdown.Item>
                                             )
                                         })
                                     }

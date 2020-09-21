@@ -14,8 +14,8 @@ class Slider extends Component {
                     className="slide-image"
                     src={ele.photo}
                     alt="Third slide"
+                    data-object-fit='cover'
                   />
-              
                   <Carousel.Caption>
                      {ele.html && ele.html}
                   </Carousel.Caption>

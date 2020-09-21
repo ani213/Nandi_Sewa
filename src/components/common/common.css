@@ -74,6 +74,9 @@ height: 6rem;
 .drop-down-item{
     font-size: 1.6rem;
 }
+.drop-down-item:hover{
+    background: linear-gradient(160deg,#EBC944, #F26D21);
+}
 .link:hover{
    background:linear-gradient(120deg,#EBC944, #F26D21);
    border-radius: 2rem;
@@ -91,13 +94,16 @@ height: 6rem;
     color: white;
     text-decoration: none; 
 }
+.selected-dropdown-link{
+    background: linear-gradient(160deg,#EBC944, #F26D21);
+}
+
 .slide-image{
     width: 100% !important;
-    height: 50rem !important;
+    height: 52rem !important;
     object-fit: cover;
-    object-position: 100%;
-    display: inline-block;
 }
+
 
 
 }
@@ -115,6 +121,7 @@ height: 6rem;
         padding: 1.5rem;
         background: #00284d;
         align-items: center;
+        border-bottom: 0.1rem solid black;
     }
     .header-content{
         width: 60%;
@@ -139,8 +146,15 @@ height: 6rem;
     }
     .nav-bar{
         background: var(--nav-background) !important;
+        padding: 1.5rem !important;
     }
-        
+    .navbar-toggler{
+        border-color: aliceblue !important;
+        padding: 0.5rem 1.3rem !important;
+       } 
+    .navbar-toggler-icon{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }     
     .link-parent{
         margin: 0.5rem;
         padding: 0.5rem;
@@ -171,9 +185,12 @@ height: 6rem;
     .mobile-selected{
        background:linear-gradient(#EBC944, #F26D21);        
     }
+    .selected-dropdown-link{
+        background: linear-gradient(160deg,#EBC944, #F26D21);
+    }
     .slide-image{
         width: 100% !important;
-        height: 39rem !important;
+        height: 52rem !important;
         object-fit: cover;
         object-position: 100%;
         display: inline-block;
@@ -192,6 +209,7 @@ height: 6rem;
         /* display: flex; */
         padding: 1.5rem;
         background: #00284d;
+        border-bottom: 0.1rem solid black;
     }
     .header-content{
         width: 100%;
@@ -224,7 +242,6 @@ height: 6rem;
 .navbar-toggler-icon{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
-
     .link-parent{
         margin: 0.5rem;
         padding: 0.5rem;
@@ -254,6 +271,9 @@ height: 6rem;
     }
     .mobile-selected{
        background:linear-gradient(#EBC944, #F26D21);        
+    }
+    .selected-dropdown-link{
+        background: linear-gradient(160deg,#EBC944, #F26D21);
     }
     .slide-image{
         width: 100% !important;

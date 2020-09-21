@@ -17,8 +17,10 @@ import slide10 from "./images/Aayogya/aayogya_10.jpg";
 class Aayogya extends Component {
     state = {  }
     render() { 
-        let slides=[{photo:slide1},{photo:slide2},{photo:slide3},{photo:slide4},{photo:slide5},{photo:slide6},{photo:slide7},
-            {photo:slide8},{photo:slide9},{photo:slide10},]
+        let slides=[{photo:slide1},
+            {photo:slide2},{photo:slide3},{photo:slide4},{photo:slide5},{photo:slide6},{photo:slide7},
+            {photo:slide8},{photo:slide9},{photo:slide10},
+        ]
         return (  
             <div>
                 <Header />
