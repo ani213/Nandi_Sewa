@@ -3,6 +3,7 @@ import Menubar from '../common/Menubar';
 import "./home.css"
 import navData from "./config.json"
 import Header from '../common/Header';
+import Slider from '../common/Slider';
 
 class Home extends Component {
     state = {  }
@@ -11,6 +12,9 @@ class Home extends Component {
             <div>
                 <Header />
                 <Menubar navs={navData.navs}/>
+                <div className="home-slide-container">
+                    <Slider />
+                </div>
                 <div className="main-container">
                     <h2 className="content-heading">Vision and Mission of NSS:</h2>
                     <p className="content-parra">To empower the economically challenged and underprivileged workforce 
