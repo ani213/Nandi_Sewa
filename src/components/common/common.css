@@ -93,7 +93,7 @@ height: 6rem;
 }
 .slide-image{
     width: 100% !important;
-    height: 39rem !important;
+    height: 50rem !important;
     object-fit: cover;
     object-position: 100%;
     display: inline-block;

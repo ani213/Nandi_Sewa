@@ -61,7 +61,6 @@ const PrivateRoute = ({ component, ...rest }) => {
                      <PublicRoute exact path="/donate" component={Donate}/>
                      <PublicRoute exact path="/volunteers" component={Volunteer}/>
                      <PublicRoute exact path="/aayogya" component={Aayogya}/>
-
                  </Switch>
              </Router>
           )};
