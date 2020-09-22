@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Header from '../common/Header';
 import Menubar from '../common/Menubar';
-import navData from "./config.json"
+import navData from "./config.json";
+import "./aayogya.css"
 import Slider from '../common/Slider';
 import slide1 from "./images/Aayogya/aayogya_1.jpg";
 import slide2 from "./images/Aayogya/aayogya_2.jpg";
@@ -28,6 +29,10 @@ class Aayogya extends Component {
                 <div>
                     <Slider slides={slides}/>
                 </div>
+                <div className="aayogya-main-container">
+                     <h2 className="aayogya-content-heading">Aayogya:</h2>
+                    <p className="aayogya-content-parra">Helping society for the healthy life and supporting them for medical treatment.</p>
+                </div>  
             </div>
         );
     }

@@ -8,6 +8,8 @@ import Joining from './pages/Joining';
 import Donate from './pages/Donate';
 import Volunteer from './pages/Volunteer';
 import Aayogya from './pages/Aayogya';
+import NandiSamaarth from './pages/NandiSamarth';
+import Protsahan from './pages/Protsahan';
 
 
 
@@ -61,6 +63,9 @@ const PrivateRoute = ({ component, ...rest }) => {
                      <PublicRoute exact path="/donate" component={Donate}/>
                      <PublicRoute exact path="/volunteers" component={Volunteer}/>
                      <PublicRoute exact path="/aayogya" component={Aayogya}/>
+                     <PublicRoute exact path="/nandisamarth" component={NandiSamaarth}/>
+                     <PublicRoute exact path="/protsahan" component={Protsahan}/>
+
                  </Switch>
              </Router>
           )};
