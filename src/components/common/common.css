@@ -71,10 +71,22 @@ height: 6rem;
     color: #FFFFFF !important;
     padding: 0.8rem 3rem !important;
 }
+.drop-link-container{
+}
+.dropdown-menu{
+    width: 25rem;
+}
+
 .drop-down-item{
     font-size: 1.6rem;
+    color: var(--font-color);
+    padding: 0.5rem 1rem;
 }
 .drop-down-item:hover{
+    color: var(--font-color);
+    text-decoration: none;
+}
+.drop-link-container:hover{
     background: linear-gradient(160deg,#EBC944, #F26D21);
 }
 .link:hover{
@@ -172,6 +184,8 @@ height: 6rem;
     }
     .drop-down-item{
         font-size: 1.6rem;
+        color: var(--font-color);
+        padding: 0.5rem 1rem;
     }
     .link-parent:hover{
        background:linear-gradient(#EBC944, #F26D21);
@@ -259,6 +273,8 @@ height: 6rem;
     }
     .drop-down-item{
         font-size: 1.6rem;
+        color: var(--font-color);
+        padding: 0.5rem 1rem;
     }
     .link-parent:hover{
        background:linear-gradient(#EBC944, #F26D21);

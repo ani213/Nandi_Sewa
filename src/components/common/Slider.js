@@ -9,7 +9,7 @@ class Slider extends Component {
 
               {
                 this.props.slides && this.props.slides.map((ele,index)=>{
-                 return (<Carousel.Item>
+                 return (<Carousel.Item key={index}>
                   <img
                     className="slide-image"
                     src={ele.photo}
