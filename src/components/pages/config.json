@@ -1,11 +1,11 @@
 {"navs":[{"to":"/home","title":"Home"},{"to":"/about","title":"About NSS"},
     {"dropdown":{"title":"Initiatives","child":[{"to":"/nandisamarth","title":"Nandi Samarth"},
     {"to":"/protsahan","title":"Protsahan"},
-    {"to":"/home","title":"Shagun"},
-    {"to":"/home","title":"Samarpan"},
-    {"to":"/home","title":"Sanskritik Sahyog"},
+    {"to":"/shagun","title":"Shagun"},
+    {"to":"/samarpan","title":"Samarpan"},
+    {"to":"/sanskritisahyog","title":"Sanskritik Sahyog"},
     {"to":"/aayogya","title":"Aayogya"},
-    {"to":"/home","title":"Annakshetra(Mass Kitchen)"}
+    {"to":"/annakshetra","title":"Annakshetra(Mass Kitchen)"}
     ]}}
     ,{"to":"/joining","title":"Joining Us"}
 ],

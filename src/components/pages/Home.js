@@ -4,9 +4,9 @@ import "./home.css"
 import navData from "./config.json"
 import Header from '../common/Header';
 import Slider from '../common/Slider';
-import slide1 from "../common/images/Slide2.jpeg";
-import slide2 from "../common/images/Slide3.jpeg";
-import slide3 from "../common/images/Slide4.jpeg";
+import slide1 from "./images/Protsahan/protsahan1.jpg"
+import slide2 from "./images/Protsahan/protsahan2.jpg"
+import slide3 from "./images/Protsahan/protsahan4.jpg"
 
 
 class Home extends Component {

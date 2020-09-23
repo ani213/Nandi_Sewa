@@ -10,6 +10,10 @@ import Volunteer from './pages/Volunteer';
 import Aayogya from './pages/Aayogya';
 import NandiSamaarth from './pages/NandiSamarth';
 import Protsahan from './pages/Protsahan';
+import Shagun from './pages/Shagun';
+import Samarpan from './pages/Samarpan';
+import SanaskritiSahayog from './pages/SanaskritiSahayog';
+import Annakshetra from './pages/Annakshetra';
 
 
 
@@ -65,6 +69,10 @@ const PrivateRoute = ({ component, ...rest }) => {
                      <PublicRoute exact path="/aayogya" component={Aayogya}/>
                      <PublicRoute exact path="/nandisamarth" component={NandiSamaarth}/>
                      <PublicRoute exact path="/protsahan" component={Protsahan}/>
+                     <PublicRoute exact path="/shagun" component={Shagun}/>
+                     <PublicRoute exact path="/samarpan" component={Samarpan}/>
+                     <PublicRoute exact path="/sanskritisahyog" component={SanaskritiSahayog}/>
+                     <PublicRoute exact path="/annakshetra" component={Annakshetra}/>
 
                  </Switch>
              </Router>
