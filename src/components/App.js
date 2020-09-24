@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router,Switch,Route,Redirect} from "react-router-dom"
+import {HashRouter,Switch,Route,Redirect} from "react-router-dom"
 import localVariables from "../config/localVariables";
 import Home from './pages/Home';
 import LayoutView from './Layout/LayoutView';
@@ -56,7 +56,7 @@ const PrivateRoute = ({ component, ...rest }) => {
 
   const App=()=>{ 
     return( 
-             <Router >
+             <HashRouter >
                  <Switch>
                      <Route exact path="/" render={() => <Redirect to="/app/dashboard" />} />
                      <Route exact path="/app" render={() => <Redirect to="/app/dashboard" />} />
@@ -75,7 +75,7 @@ const PrivateRoute = ({ component, ...rest }) => {
                      <PublicRoute exact path="/annakshetra" component={Annakshetra}/>
 
                  </Switch>
-             </Router>
+             </HashRouter>
           )};
   
  export default App;

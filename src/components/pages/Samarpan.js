@@ -32,7 +32,7 @@ class Samarpan extends Component {
             </div>
             <div className="samarpan-main-container">
                  <h2 className="samarpan-content-heading">Samarpan:</h2>
-                <p className="samarpan-content-parra">anonymous donation during visit of shrine, temples or religious rituals.</p>
+                <p className="samarpan-content-parra">Anonymous donation during visit of shrine, temples or religious rituals.</p>
             </div>
         </div>
          );
