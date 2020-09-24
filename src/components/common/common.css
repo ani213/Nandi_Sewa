@@ -20,6 +20,9 @@
     font-size: 1.9rem;
     color: white;
 }
+.header-space{
+    padding-left: 2rem;
+}
 .hindi-text{
     font-size: 1.5rem;
 }
@@ -228,6 +231,9 @@ height: 6rem;
         padding: 1.5rem;
         background: #00284d;
         border-bottom: 0.1rem solid black;
+    }
+    .header-content-container{
+        display: grid;
     }
     .header-content{
         width: 100%;
