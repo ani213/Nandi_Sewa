@@ -5,6 +5,7 @@ import Menubar from '../common/Menubar';
 import profile from "./images/profile.jpg";
 import "./volunteer.css";
 import { Form } from 'react-bootstrap';
+import photo from "./images/Samarpan/samarpan6.jpg"
 
 
 class Volunteer extends Component {
@@ -72,9 +73,13 @@ class Volunteer extends Component {
                                     <input type="text" name="name" data-provide="datepicker" required className="form-control input input-address" placeholder="Your Address.."/>
                                 </div>
                             </div>
-                            <div className="input-container">
+                                <div className="input-container">
                                     <label className="volunteer-fontsize">Say</label>
-                                    <input type="text" name="name" data-provide="datepicker" required className="form-control input input-say" placeholder="What You Say.."/>
+                                    <input type="text" name="name" data-provide="datepicker" required className="form-control input input-say" placeholder="What You Say.." />
+                                </div>
+                                <div className="input-container">
+                                    <p className="volunteer-fontsize">Profile Upload</p>
+                                    <input type="file" name="photo" className="input-file" />
                                 </div>
                             <div>
                                 <div className="pay-button-container">
@@ -84,8 +89,15 @@ class Volunteer extends Component {
                     </Form>
                     </div>
                 </div>
-                <div>
-
+                <div className="recent-valunteer-container">
+                    <div className="text-center"><h1 className="recent-volunteer-heading">RECENT VOLUNTEERS</h1></div>
+                    <div className="recent-valunteer-image-container">
+                      <img src={photo} className="recent-valunteer-image"/>
+                      <div>
+                          <h2>Aniket Verma</h2>
+                          <p>Delhi</p>
+                      </div>
+                    </div>
                 </div>
                 </div>
             </div>

@@ -12,17 +12,16 @@
 }
     
 .volunteer-image-container{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2rem;
 }
 .image-container{
- margin: 1.1rem; 
  border: 0.2rem solid #cccccc;
- width: 15%;
 }
-
 .volunteer-image{
     width: 100%;
+    height: 84%;
 }
 .volunteer-image-content{
     padding: 1rem;
@@ -31,12 +30,13 @@
    color: var(--primary-color)
 }
 .volunteer-main-container{
-    padding: 3rem;
+     padding: 3rem;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+
 }
 .form-container{
-    width: 50%;
+    width: 100%;
     background:  #ff6464;
     padding: 2rem;
     border-radius: 1rem;
@@ -69,6 +69,10 @@
     padding-bottom: 4rem !important;
     padding-top: 2rem !important;  
 }
+.input-file{
+    font-size: 1.6rem;
+    color: white;
+}
 .input{
     font-size: 1.7rem !important;
 }
@@ -80,6 +84,20 @@
 .pay-button{
     padding: 0.7rem 5rem !important;
     font-size: 1.5rem !important;
+}
+.recent-valunteer-container{
+    background: #cccccc;
+}
+.recent-volunteer-heading{
+    padding: 2rem;
+    font-weight: 600;
+}
+.recent-valunteer-image-container{
+    display: flex;
+}
+.recent-valunteer-image{
+    object-fit: cover;
+    width: 40%;
 }
 
 }
@@ -98,8 +116,9 @@
     }
         
     .volunteer-image-container{
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 0.7rem;
     }
     .image-container{
      margin: 1.1rem; 
@@ -108,7 +127,8 @@
     }
     
     .volunteer-image{
-        width: 25rem;
+        width: 100%;
+        height: 84%;
     }
     .volunteer-image-content{
         padding: 1rem;
@@ -155,6 +175,10 @@
         padding-bottom: 4rem !important;
         padding-top: 2rem !important;  
     }
+    .input-file{
+        font-size: 1.6rem;
+        color: white;
+    }
     .input{
         font-size: 1.7rem !important;
     }
@@ -166,7 +190,11 @@
     .pay-button{
         padding: 0.7rem 5rem !important;
         font-size: 1.5rem !important;
-    }    
+    } 
+    .recent-valunteer-container{
+    
+    }  
+    
 }
 
 
@@ -181,8 +209,9 @@
     }
         
     .volunteer-image-container{
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 0.2rem;
     }
     .image-container{
      margin: 1.1rem; 
@@ -191,7 +220,8 @@
     }
     
     .volunteer-image{
-        width: 20rem;
+        width: 100%;
+        height: 100%;
     }
     .volunteer-image-content{
         padding: 1rem;
@@ -237,6 +267,10 @@
     .input-say{
         padding-bottom: 4rem !important;
         padding-top: 2rem !important;  
+    }
+    .input-file{
+        font-size: 1.6rem;
+        color: white;
     }
     .input{
         font-size: 1.7rem !important;
