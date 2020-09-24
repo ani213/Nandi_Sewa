@@ -1,11 +1,37 @@
 :root {
     --primary-color:#0D3D56;
+    --greyLight-1: #E4EBF5;
+    --greyLight-2: #c8d0e7;
+    --greyLight-3: #bec8e4;
+    --greyDark: #9baacf;
+    --greyDark-1: #BABECC;
+    --background-1:#EBECF0;
   }
 
 @media screen and (min-width:851px) {
     html{
         font-size: 62.5%;
     }
+.home-content-container{
+    display: grid;
+   grid-template-columns: auto auto auto auto;
+   grid-gap: 6rem; 
+   padding: 2.5rem;
+   background: #0D3D56;
+}
+.content-heading-1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    padding-bottom: 1.4rem;
+    color: var(--primary-color);
+}
+.content-parra-1{
+    font-size: 1.7rem;
+}
+.text-color-white{
+    color: white !important;
+}
+
 .main-container{
     padding: 2rem;
 }
@@ -19,6 +45,50 @@
     font-size: 1.7rem;
     color: var(--primary-color);
 }
+.member-main-container{
+    background: ghostwhite;
+    padding-top: 2rem;
+}
+
+.member-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2rem;
+    padding: 2rem 2rem;
+}
+.member-image-container{
+ border: 0.2rem solid #cccccc;
+}
+.member-image{
+    width: 100%;
+    height: 27rem;
+    object-fit: cover;
+}
+.member-image-content{
+    padding: 1rem;
+   font-size: 1.5rem;
+   text-align: center;
+   color: var(--primary-color)
+}
+.home-donation-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+    background: var(--greyLight-1);
+    margin-top: 2rem;
+}
+.home-link{
+    border: 0.1rem solid var(--primary-color);
+    padding: 2rem 4rem;
+    font-size: 2rem;
+    border-radius: 10rem;
+    color:var(--primary-color)
+}
+.home-link:hover{
+    text-decoration: none;
+    background: #66cc66;
+}
 }
 
 
@@ -28,6 +98,25 @@
 @media screen and (min-width:451px) and (max-width:850px) {
     html{
         font-size: 55%;
+    }
+    .home-content-container{
+        display: grid;
+       grid-template-columns: auto auto auto auto;
+       grid-gap: 6rem; 
+       padding: 2.5rem;
+       background: #0D3D56;
+    }
+    .content-heading-1{
+        font-size: 2.5rem;
+        font-weight: 900;
+        padding-bottom: 1.4rem;
+        
+    }
+    .content-parra-1{
+        font-size: 2rem;
+    }
+    .text-color-white{
+        color: white !important;
     }
     .main-container{
         padding: 2rem;
@@ -40,6 +129,50 @@
     .content-parra{
         font-size: 1.7rem;
         color: var(--primary-color);
+    }
+    .member-main-container{
+        background: ghostwhite;
+        padding-top: 2rem;
+    }
+    
+    .member-container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 2rem;
+        padding: 2rem 2rem;
+    }
+    .member-image-container{
+     border: 0.2rem solid #cccccc;
+    }
+    .member-image{
+        width: 100%;
+        height: 27rem;
+        object-fit: cover;
+    }
+    .member-image-content{
+        padding: 1rem;
+       font-size: 1.5rem;
+       text-align: center;
+       color: var(--primary-color)
+    }
+    .home-donation-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 3rem;
+        background: var(--greyLight-1);
+        margin-top: 2rem;
+    }
+    .home-link{
+        border: 0.1rem solid var(--primary-color);
+        padding: 2rem 4rem;
+        font-size: 2rem;
+        border-radius: 10rem;
+        color:var(--primary-color)
+    }
+    .home-link:hover{
+        text-decoration: none;
+        background: #66cc66;
     }
 
 }
@@ -51,6 +184,31 @@
     html{
         font-size: 45%;
     }
+    .home-content-container{
+        display: grid;
+       grid-template-columns: auto;
+       grid-gap: 4rem; 
+       /* padding: 2.5rem; */
+       background: #0D3D56;
+    }
+    .content-1{
+        border-bottom: 0.1rem solid white;
+    }
+    .content-container{
+        padding: 2.5rem;
+    }
+    .content-heading-1{
+        font-size: 2.5rem;
+        font-weight: 900;
+        padding-bottom: 1.4rem;
+        color: var(--primary-color);
+    }
+    .content-parra-1{
+        font-size: 2rem;
+    }
+    .text-color-white{
+        color: white !important;
+    }
     .main-container{
         padding: 2rem;
     }
@@ -62,5 +220,49 @@
     .content-parra{
         font-size: 1.7rem;
         color: var(--primary-color);
+    }
+    .member-main-container{
+        background: ghostwhite;
+        padding-top: 2rem;
+    }
+    
+    .member-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 2rem;
+        padding: 2rem 2rem;
+    }
+    .member-image-container{
+     border: 0.2rem solid #cccccc;
+    }
+    .member-image{
+        width: 100%;
+        height: 27rem;
+        object-fit: cover;
+    }
+    .member-image-content{
+        padding: 1rem;
+       font-size: 1.5rem;
+       text-align: center;
+       color: var(--primary-color)
+    }
+    .home-donation-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 3rem;
+        padding: 4rem 3rem;
+        background: var(--greyLight-1);
+        margin-top: 2rem;
+    }
+    .home-link{
+        border: 0.1rem solid var(--primary-color);
+        padding: 2rem 4rem;
+        font-size: 2rem;
+        border-radius: 10rem;
+        color:var(--primary-color)
+    }
+    .home-link:hover{
+        text-decoration: none;
+        background: #66cc66;
     }
 }  

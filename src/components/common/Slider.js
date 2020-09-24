@@ -10,12 +10,14 @@ class Slider extends Component {
               {
                 this.props.slides && this.props.slides.map((ele,index)=>{
                  return (<Carousel.Item key={index}>
+                  <div className="slide-image-container">
                   <img
                     className="slide-image"
                     src={ele.photo}
                     alt="Third slide"
                     data-object-fit='cover'
                   />
+                  </div>
                   <Carousel.Caption>
                      {ele.html && ele.html}
                   </Carousel.Caption>

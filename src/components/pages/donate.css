@@ -93,8 +93,8 @@
         display: flex;
         justify-content: center;
     }
-    .form-container{
-        width: 50%;
+    .donate-form-container{
+        width: 100%;
         background:  #ff6464;
         padding: 3rem;
         border-radius: 1rem;

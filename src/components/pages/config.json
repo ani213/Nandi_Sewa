@@ -9,14 +9,39 @@
     ]}}
     ,{"to":"/joining","title":"Joining Us"}
 ],
-"volunteers":[{"name":"Aniket Kumar Verma","profile":"Treasurer & Ex.Director of Ven"},
-    {"name":"Umesh Prajapati","profile":"Gen.Manager & Public Servant"},
-    {"name":"Aniket Kumar Verma","profile":"Treasurer & Ex.Director of Ven"},
-    {"name":"Aniket Kumar Verma","profile":"Treasurer & Ex.Director of Ven"},
-    {"name":"Aniket Kumar Verma","profile":"Treasurer & Ex.Director of Ven"},
-    {"name":"Aniket Kumar Verma","profile":"Treasurer & Ex.Director of Ven"},
-    {"name":"Aniket Kumar Verma","profile":"Treasurer & Ex.Director of Ven"},
-    {"name":"Aniket Kumar Verma","profile":"Treasurer & Ex.Director of Ven"}
+"volunteers":[{"name":"ABHILASHA  NANDI","profile":"PRESIDENT"},
+    {"name":"SUBHASH BAJPAYEE","profile":"VICE PRESIDENT"},
+    {"name":"ABHISHEK GUPTA","profile":"SECRETARY"},
+    {"name":"RAVIKANT GUPTA","profile":"TREASURER"},
+    {"name":"KANHIYA LAL GUPTA","profile":"MEMBER"},
+    {"name":"MANOJ GUPTA ","profile":"MEMBER"},
+    {"name":"PRIYANKA RANI","profile":"MEMBER"},
+    {"name":"ARUN KESHARWANI ","profile":"MEMBER"},
+    {"name":"PANKAJ GUPTA","profile":"MEMBER"},
+    {"name":"KUNVERJI KESHARWANI","profile":"MEMBER"},
+    {"name":"SHYAM KESHRI","profile":"MEMBER"},
+    {"name":"SHAKEEL AHMAD","profile":"MEMBER"},
+    {"name":"VIRATBAJPAYEE","profile":"MEMBER"},
+    {"name":"GAURAV AGGARWAL","profile":"MEMBER"},
+    {"name":"HARSH KESHRI ","profile":"MEMBER"}
+
+],
+"members":[{"name":"ABHILASHA  NANDI","profile":"PRESIDENT"},
+    {"name":"SUBHASH BAJPAYEE","profile":"VICE PRESIDENT"},
+    {"name":"ABHISHEK GUPTA","profile":"SECRETARY"},
+    {"name":"RAVIKANT GUPTA","profile":"TREASURER"},
+    {"name":"KANHIYA LAL GUPTA","profile":"MEMBER"},
+    {"name":"MANOJ GUPTA ","profile":"MEMBER"},
+    {"name":"PRIYANKA RANI","profile":"MEMBER"},
+    {"name":"ARUN KESHARWANI ","profile":"MEMBER"},
+    {"name":"PANKAJ GUPTA","profile":"MEMBER"},
+    {"name":"KUNVERJI KESHARWANI","profile":"MEMBER"},
+    {"name":"SHYAM KESHRI","profile":"MEMBER"},
+    {"name":"SHAKEEL AHMAD","profile":"MEMBER"},
+    {"name":"VIRATBAJPAYEE","profile":"MEMBER"},
+    {"name":"GAURAV AGGARWAL","profile":"MEMBER"},
+    {"name":"HARSH KESHRI ","profile":"MEMBER"}
 ]
+    
 
 }
