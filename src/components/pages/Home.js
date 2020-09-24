@@ -5,15 +5,16 @@ import rawData from "./config.json"
 import Header from '../common/Header';
 import Slider from '../common/Slider';
 import slide1 from "./images/Protsahan/protsahan22.jpg"
-import slide2 from "./images/Sanskriti/sanskriti2.jpg"
-import slide4 from "./images/Sanskriti/sanskriti4.jpg"
+import slide2 from "./images/Protsahan/protsahan23.jpg"
+import slide3 from "./images/Protsahan/protsahan17.jpg"
+
 import memberImage1 from "./images/profile.jpg"
 import {Link} from "react-router-dom"
 
 class Home extends Component {
     state = {  }
     render() { 
-        let slides=[{photo:slide1},{photo:slide2},{photo:slide4}]
+        let slides=[{photo:slide1},{photo:slide2},{photo:slide3}]
         return ( 
             <div>
                 <Header />
