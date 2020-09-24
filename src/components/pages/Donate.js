@@ -13,7 +13,7 @@ class Donate extends Component {
                 <Header />
                 <Menubar navs={navData.navs}/>
                 <div className="form-main-container">
-                    <div className="form-container">
+                    <div className="donate-form-container">
                         <h1 className="text-center">Make a Donation Now !</h1>
                     <form>
                             <div>

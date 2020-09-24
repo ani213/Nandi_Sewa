@@ -91,12 +91,14 @@ class Volunteer extends Component {
                 </div>
                 <div className="recent-valunteer-container">
                     <div className="text-center"><h1 className="recent-volunteer-heading">RECENT VOLUNTEERS</h1></div>
+                    <div className="recent-valunteer-image-main-container">
                     <div className="recent-valunteer-image-container">
                       <img src={photo} className="recent-valunteer-image"/>
-                      <div>
+                      <div className="recent-valunteer-image-content">
                           <h2>Aniket Verma</h2>
-                          <p>Delhi</p>
+                          <p className="text-size">Delhi</p>
                       </div>
+                    </div>
                     </div>
                 </div>
                 </div>
