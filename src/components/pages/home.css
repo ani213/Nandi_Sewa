@@ -102,6 +102,9 @@
     html{
         font-size: 55%;
     }
+    .home-main-container{
+        overflow: hidden;
+    }   
     .home-content-container{
         display: grid;
        grid-template-columns: auto auto auto auto;
@@ -186,6 +189,9 @@
     html{
         font-size: 45%;
     }
+    .home-main-container{
+        overflow: hidden;
+    } 
     .home-content-container{
         display: grid;
        grid-template-columns: auto;

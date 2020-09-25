@@ -36,7 +36,7 @@ class Home extends Component {
                     <Slider slides={slides}/>
                 </div>
                 <div className="home-content-container" data-aos="flip-up">
-                    <div className="content-1">
+                    <div className="content-1" data-aos="flip-up">
                         <div className="content-container">
                             <h1 className="content-heading-1 text-color-white">GET INVOLVED</h1>
                             <p className="content-parra-1 text-color-white">Make sure you begin with baby steps before you
@@ -45,7 +45,7 @@ class Home extends Component {
                          something new - about others as well as about yourself.</p>
                         </div>
                     </div>
-                    <div className="content-1">
+                    <div className="content-1" data-aos="flip-up">
                     <div className="content-container">
                     <h1 className="content-heading-1 text-color-white">BECOME A VOLUNTEER</h1>
                         <p className="content-parra-1 text-color-white">How can anyone help to Nandi Sewa Sansthan Organization alone, 
@@ -53,7 +53,7 @@ class Home extends Component {
                          its social goal without you. Here you can Contact to The Nandi Sewa Sansthan Organization.</p>
                          </div>
                     </div>
-                    <div className="content-1">
+                    <div className="content-1" data-aos="flip-up">
                     <div className="content-container">
                     <h1 className="content-heading-1 text-color-white">ADOPT A CHILD</h1>
                         <p className="content-parra-1 text-color-white">How can anyone help to Nandi Sewa Sansthan Organization
@@ -62,7 +62,7 @@ class Home extends Component {
                          can Contact to The Nandi Sewa Sansthan Organization.</p>
                          </div>
                     </div>
-                    <div className="content-1">
+                    <div className="content-1" data-aos="flip-up">
                         <div className="content-container">
                             <h1 className="content-heading-1 text-color-white">CALL +91-1234567890</h1>
                             <p className="content-parra-1 text-color-white">How can anyone help to Nandi Sewa Sansthan Organization alone,
