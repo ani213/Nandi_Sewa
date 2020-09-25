@@ -156,10 +156,10 @@
        color: var(--primary-color)
     }
     .home-donation-container{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 3rem;
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 3rem;
+        padding: 4rem 3rem;
         background: var(--greyLight-1);
         margin-top: 2rem;
     }
@@ -174,7 +174,6 @@
         text-decoration: none;
         background: #66cc66;
     }
-
 }
 
 
