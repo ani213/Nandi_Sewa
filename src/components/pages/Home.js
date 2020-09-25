@@ -9,19 +9,33 @@ import slide2 from "./images/Protsahan/protsahan23.jpg"
 import slide3 from "./images/Protsahan/protsahan17.jpg"
 import memberImage1 from "./images/profile.jpg"
 import {Link} from "react-router-dom"
+import AOS from 'aos';
+
 
 class Home extends Component {
     state = {  }
+    componentDidMount=()=>{
+        AOS.init({
+           offset:120,
+           delay:20,
+           duration:1000,
+           easing:"ease-in-out",
+           mirror:true,
+           once:false,
+           // desable:"mobile"
+        })
+    }  
+
     render() { 
         let slides=[{photo:slide1},{photo:slide2},{photo:slide3}]
         return ( 
-            <div>
+            <div className="home-main-container">
                 <Header />
                 <Menubar navs={rawData.navs}/>
                 <div className="home-slide-container">
                     <Slider slides={slides}/>
                 </div>
-                <div className="home-content-container">
+                <div className="home-content-container" data-aos="flip-up">
                     <div className="content-1">
                         <div className="content-container">
                             <h1 className="content-heading-1 text-color-white">GET INVOLVED</h1>
@@ -57,7 +71,7 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="main-container">
+                <div className="main-container" data-aos="flip-right">
                     <h2 className="content-heading">Vision and Mission of NSS:</h2>
                     <p className="content-parra">To empower the economically challenged and underprivileged workforce 
                         through employment, business and livelihood.</p>
@@ -71,7 +85,7 @@ class Home extends Component {
                 <div className="member-container">
                  { rawData.volunteers && rawData.members.map((ele,index)=>{
                      return(
-                            <div className="member-image-container" key={index}>
+                            <div className="member-image-container" key={index} data-aos={`${index%2===0?"fade-down-left":"fade-down-right"}`}>
                                <img  src={memberImage1} alt="profile" className="member-image"/>
                                <div className="member-image-content">
                                     <div className="content-heading">{ele.name}</div>
@@ -83,7 +97,7 @@ class Home extends Component {
                  }
                  </div>
                 </div>
-                 <div className="home-donation-container">
+                 <div className="home-donation-container"  data-aos="fade-down-left">
                      <div>
                     <h1 className="content-heading-1">Make a Donation Now!</h1>
                     <p className="content-parra">NGOs differ from profit organizations in the sense that their primary goal is to provide help!!</p>
