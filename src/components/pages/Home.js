@@ -115,7 +115,7 @@ class Home extends Component {
                 <div className="home-work-main-container">
                     <h1 className="text-center content-heading-1">What Can We Do?</h1>
                 <div className="home-work-container">
-                     <Card>
+                     <Card data-aos="zoom-out">
                          <CardActionArea>
                          <CardContent className="home-work-content-container">
                              <img src={donationpic}/>
@@ -128,7 +128,7 @@ class Home extends Component {
                          </CardContent>
                          </CardActionArea>
                      </Card>
-                     <Card>
+                     <Card data-aos="zoom-out">
                          <CardActionArea>
                          <CardContent className="home-work-content-container">
                              <img src={volunteerpic}/>
@@ -141,7 +141,7 @@ class Home extends Component {
                          </CardContent>
                          </CardActionArea>
                      </Card>
-                     <Card>
+                     <Card data-aos="zoom-out">
                          <CardActionArea>
                          <CardContent className="home-work-content-container">
                              <img src={Scholarshippic}/>
@@ -154,7 +154,7 @@ class Home extends Component {
                          </CardContent>
                          </CardActionArea>
                      </Card>
-                     <Card>
+                     <Card data-aos="zoom-out">
                          <CardActionArea>
                          <CardContent className="home-work-content-container">
                              <img src={child}/>
@@ -167,7 +167,7 @@ class Home extends Component {
                          </CardContent>
                          </CardActionArea>
                      </Card>
-                     <Card>
+                     <Card data-aos="zoom-out">
                          <CardActionArea>
                          <CardContent className="home-work-content-container">
                              <img src={house}/>
@@ -179,7 +179,7 @@ class Home extends Component {
                          </CardContent>
                          </CardActionArea>
                      </Card>
-                     <Card>
+                     <Card data-aos="zoom-out">
                          <CardActionArea>
                          <CardContent className="home-work-content-container">
                              <img src={givefood}/>
