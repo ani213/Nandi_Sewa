@@ -15,7 +15,11 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import donationpic from "./images/work/donate.png";
-import volunteerpic from './images/work/volunteer.png'
+import volunteerpic from './images/work/volunteer.png';
+import Scholarshippic from './images/work/gift.png';
+import child from "./images/work/child.png";
+import house from "./images/work/house.png";
+import givefood from "./images/work/givefood.png"
 
 class Home extends Component {
     state = {  }
@@ -140,12 +144,12 @@ class Home extends Component {
                      <Card>
                          <CardActionArea>
                          <CardContent className="home-work-content-container">
-                             <img src={donationpic}/>
+                             <img src={Scholarshippic}/>
                              <div>
-                                 <div className="content-heading">GIVE DONATION</div>
-                                 <p className="content-parra">Donations can be received in a variety of 
-                                     ways. Some campaigns have a pre-determined amount 
-                                     they want to receive.</p>
+                                 <div className="content-heading">GIVE SCHOLARSHIP</div>
+                                 <p className="content-parra">We can Provide The Scholarship For
+                                  Child Every year. NGO support and take on 
+                                  a multitude of tasks to help locals.</p>
                              </div>
                          </CardContent>
                          </CardActionArea>
@@ -153,12 +157,12 @@ class Home extends Component {
                      <Card>
                          <CardActionArea>
                          <CardContent className="home-work-content-container">
-                             <img src={volunteerpic}/>
+                             <img src={child}/>
                              <div>
-                                 <div className="content-heading">GIVE DONATION</div>
-                                 <p className="content-parra">Donations can be received in a variety of 
-                                     ways. Some campaigns have a pre-determined amount 
-                                     they want to receive.</p>
+                                 <div className="content-heading">ADOPT A CHILD</div>
+                                 <p className="content-parra">Make sure you begin with baby steps before 
+                                 you commit to anything big or long term - we 
+                                 call it the ‘tasting sessions’ -</p>
                              </div>
                          </CardContent>
                          </CardActionArea>
@@ -166,12 +170,11 @@ class Home extends Component {
                      <Card>
                          <CardActionArea>
                          <CardContent className="home-work-content-container">
-                             <img src={donationpic}/>
+                             <img src={house}/>
                              <div>
-                                 <div className="content-heading">GIVE DONATION</div>
-                                 <p className="content-parra">Donations can be received in a variety of 
-                                     ways. Some campaigns have a pre-determined amount 
-                                     they want to receive.</p>
+                                 <div className="content-heading">BUILD HOUSE</div>
+                                 <p className="content-parra">We can Provide The Build House For Every Child to Every year. 
+                                 NGO support and take on a multitude of tasks to help locals.</p>
                              </div>
                          </CardContent>
                          </CardActionArea>
@@ -179,12 +182,11 @@ class Home extends Component {
                      <Card>
                          <CardActionArea>
                          <CardContent className="home-work-content-container">
-                             <img src={donationpic}/>
+                             <img src={givefood}/>
                              <div>
-                                 <div className="content-heading">GIVE DONATION</div>
-                                 <p className="content-parra">Donations can be received in a variety of 
-                                     ways. Some campaigns have a pre-determined amount 
-                                     they want to receive.</p>
+                                 <div className="content-heading">GIVE FOOD</div>
+                                 <p className="content-parra">We can Provide The Food for Child to Every day. 
+                                 NGO support and take on a multitude of tasks to help locals.</p>
                              </div>
                          </CardContent>
                          </CardActionArea>
