@@ -10,13 +10,18 @@ import slide3 from "./images/Protsahan/protsahan17.jpg"
 import memberImage1 from "./images/profile.jpg"
 import {Link} from "react-router-dom"
 import AOS from 'aos';
-
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardContent from '@material-ui/core/CardContent';
+import Typography from '@material-ui/core/Typography';
+import donationpic from "./images/work/donate.png";
+import volunteerpic from './images/work/volunteer.png'
 
 class Home extends Component {
     state = {  }
     componentDidMount=()=>{
         AOS.init({
-           offset:120,
+           offset:100,
            delay:20,
            duration:1000,
            easing:"ease-in-out",
@@ -85,18 +90,107 @@ class Home extends Component {
                 <div className="member-container">
                  { rawData.volunteers && rawData.members.map((ele,index)=>{
                      return(
-                            <div className="member-image-container" key={index} data-aos={`${index%2===0?"fade-down-left":"fade-down-right"}`}>
-                               <img  src={memberImage1} alt="profile" className="member-image"/>
-                               <div className="member-image-content">
-                                    <div className="content-heading">{ele.name}</div>
-                                    <div className="content-parra">{ele.profile}</div>
-                               </div>
-                            </div>
+                            <Card data-aos={`${index%2===0?"fade-down-left":"fade-down-right"}`} key={index}>
+                                <CardActionArea>
+                                <img  src={memberImage1} alt="profile" className="member-image"/>
+                                <CardContent>
+                                <Typography gutterBottom variant="h4" component="h3" className="text-center">
+                                         {ele.name}
+                                </Typography>
+                                <Typography gutterBottom variant="h5" component="h3" className="text-center">
+                                         {ele.profile}
+                                </Typography>
+                                </CardContent>
+                                </CardActionArea>
+                            </Card>
                      )
                  })  
                  }
                  </div>
                 </div>
+                <div className="home-work-main-container">
+                    <h1 className="text-center content-heading-1">What Can We Do?</h1>
+                <div className="home-work-container">
+                     <Card>
+                         <CardActionArea>
+                         <CardContent className="home-work-content-container">
+                             <img src={donationpic}/>
+                             <div>
+                                 <div className="content-heading">GIVE DONATION</div>
+                                 <p className="content-parra">Donations can be received in a variety of 
+                                     ways. Some campaigns have a pre-determined amount 
+                                     they want to receive.</p>
+                             </div>
+                         </CardContent>
+                         </CardActionArea>
+                     </Card>
+                     <Card>
+                         <CardActionArea>
+                         <CardContent className="home-work-content-container">
+                             <img src={volunteerpic}/>
+                             <div>
+                                 <div className="content-heading">BECOME A VOLUNTEER</div>
+                                 <p className="content-parra">Volunteer abroad for NGO support 
+                                 and take on a multitude of tasks to help locals, volunteers
+                                  and your NGO at the same time.</p>
+                             </div>
+                         </CardContent>
+                         </CardActionArea>
+                     </Card>
+                     <Card>
+                         <CardActionArea>
+                         <CardContent className="home-work-content-container">
+                             <img src={donationpic}/>
+                             <div>
+                                 <div className="content-heading">GIVE DONATION</div>
+                                 <p className="content-parra">Donations can be received in a variety of 
+                                     ways. Some campaigns have a pre-determined amount 
+                                     they want to receive.</p>
+                             </div>
+                         </CardContent>
+                         </CardActionArea>
+                     </Card>
+                     <Card>
+                         <CardActionArea>
+                         <CardContent className="home-work-content-container">
+                             <img src={volunteerpic}/>
+                             <div>
+                                 <div className="content-heading">GIVE DONATION</div>
+                                 <p className="content-parra">Donations can be received in a variety of 
+                                     ways. Some campaigns have a pre-determined amount 
+                                     they want to receive.</p>
+                             </div>
+                         </CardContent>
+                         </CardActionArea>
+                     </Card>
+                     <Card>
+                         <CardActionArea>
+                         <CardContent className="home-work-content-container">
+                             <img src={donationpic}/>
+                             <div>
+                                 <div className="content-heading">GIVE DONATION</div>
+                                 <p className="content-parra">Donations can be received in a variety of 
+                                     ways. Some campaigns have a pre-determined amount 
+                                     they want to receive.</p>
+                             </div>
+                         </CardContent>
+                         </CardActionArea>
+                     </Card>
+                     <Card>
+                         <CardActionArea>
+                         <CardContent className="home-work-content-container">
+                             <img src={donationpic}/>
+                             <div>
+                                 <div className="content-heading">GIVE DONATION</div>
+                                 <p className="content-parra">Donations can be received in a variety of 
+                                     ways. Some campaigns have a pre-determined amount 
+                                     they want to receive.</p>
+                             </div>
+                         </CardContent>
+                         </CardActionArea>
+                     </Card>
+                 </div>
+                 </div>
                  <div className="home-donation-container"  data-aos="fade-down-left">
                      <div>
                     <h1 className="content-heading-1">Make a Donation Now!</h1>
